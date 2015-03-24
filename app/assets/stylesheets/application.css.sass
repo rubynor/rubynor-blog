@@ -17,8 +17,6 @@
 //
 
 // typography start
-html
-  width: 100% !important
 
 body
   padding: 0
@@ -154,89 +152,62 @@ header h1 a
   height: 236px
 
 #header
-  background: image_url('header_bg.png') no-repeat top center#212C35
+  background: image_url('jeans_pattern.png') repeat #212C35
 
-#top_bar
+#top_bar 
   width: 960px
   margin: auto
 
-.logo
-  width: 150px
-  height: 47px
-  margin: 0px 50px 8px 0
+  .logo
+    width: 150px
+    height: 47px
+    margin: 0px 50px 8px 0
 
-#custom_logo
-  float: left
+    #custom_logo
+      float: left
 
-  img
-    max-width: 100%
-    max-height: 100%  
+      img
+        max-width: 100%
+        max-height: 100%  
+
+#show_blog_post
+  
+  #next_prev_article, a.prev, a.home, a.next
+    text-decoration: none
+    color: #333
 
 #menu_wrapper
   height: 60px
   padding: 0
 
-#menu_wrapper .nav ul, #menu_wrapper div .nav
-  list-style: none
-  display: block
-  padding: 6px 5px 0 0
-  float: right
-  text-transform: uppercase
-  text-decoration: none
-  font-size: 11px
-  font-weight: bold
+  & .nav ul, & div .nav
+    list-style: none
+    display: block
+    padding: 6px 5px 0 0
+    float: right
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 11px
+    font-weight: bold
 
-#menu_wrapper .nav ul li, #menu_wrapper div .nav li
-  display: block
-  float: left
-  margin: 0 0 0 0
-  text-decoration: none
+    & li
+      display: block
+      float: left
+      margin: 0 0 0 0
+      text-decoration: none
 
-#menu_wrapper .nav ul li a, #menu_wrapper div .nav li a
-  display: block
-  text-decoration: none
-  padding: 8px 17px 8px 17px
-  margin: 7px 5px 0 0
-  color: #FFF
-  -moz-border-radius: 5px
-  -webkit-border-radius: 5px
-  border-radius: 5px
+      & a
+        display: block
+        text-decoration: none
+        padding: 8px 17px 8px 17px
+        margin: 7px 5px 0 0
+        color: #FFF
+        -moz-border-radius: 5px
+        -webkit-border-radius: 5px
+        border-radius: 5px
 
-#menu_wrapper .nav ul li a.hover, #menu_wrapper .nav ul li a:hover, #menu_wrapper div .nav li a.hover, #menu_wrapper div .nav li a:hover
-  background: #000000
-
-#menu_wrapper div .nav li.current-menu-item a
-  background: #000000
-
-#menu_wrapper .nav ul li ul, #menu_wrapper div .nav li ul
-  display: none
-  list-style: none
-  background: #000000
-  position: absolute
-  float: none
-  padding: 2px 0 20px 0
-  width: 200px
-  z-index: 1000
-  margin-top: -6px
-  padding-bottom: 5px
-  -moz-border-radius: 5px
-  -webkit-border-radius: 5px
-  border-radius: 5px
-
-#menu_wrapper .nav ul li ul li ul, #menu_wrapper div .nav li ul li ul
-  margin-left: 200px
-  margin-top: -39px
-
-#menu_wrapper .nav ul li ul li, #menu_wrapper div .nav li ul li
-  clear: both
-  width: 200px
-
-#menu_wrapper .nav ul li ul li a, #menu_wrapper div .nav li ul li a
-  width: 170px
-  display: block
-
-#menu_wrapper .nav ul li ul li a.hover, #menu_wrapper .nav ul li ul li a:hover, #menu_wrapper div .nav li ul li a.hover, #menu_wrapper div .nav li ul li a:hover
-  color: #FFFFFF
+        &:hover
+          background: #000000
 
 // body_content start 
 #body_content_title
@@ -247,37 +218,9 @@ header h1 a
   text-align: center
   border-bottom: 4px solid #333333
 
-#blog_post
+#blog_posts
   width: 70%
   float: left
-  padding-bottom: 1px solid
-  margin-bottom: 2em
-
-  header
-    padding-bottom: 1px dotted
-
-  aside.filled_in a
-    text-decoration: none
-    color: blue
-
-  a#rss_feed_subscibe
-    text-decoration: none
-    color: blue
-
-  ul#categories
-    list-style: none
-
-  ul#categories li a
-    list-style: none
-    text-decoration: none
-
-  aside.tagged a  
-    text-decoration: none
-    color: blue
-
-.blog_post
-  width: 70%
-
 
 #comments
   width: 70%
@@ -285,6 +228,13 @@ header h1 a
 
 #side_body
   width: 70%
+
+a
+  color: blue
+  text-decoration: none
+
+  & visited
+    color: blue
 
 // body_content end
 
