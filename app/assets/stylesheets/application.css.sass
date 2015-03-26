@@ -123,17 +123,11 @@ form.inline
 form.inline p
   margin-bottom: 0
 
-#comment_name
-  margin-left: 1.65em
-
-#comment_email
-  margin-left: 1.8em
 // forms end
 
 // global start
 #page_container
   width: 100%
-  background: image_url('body_bg.gif')
   margin: 0
 
 .span
@@ -144,16 +138,15 @@ form.inline p
   margin-right: 0
 
 // header start
-header h1 a
-  color: #000
-  text-decoration: none
 
 #hva-gjor-vi-page
   background: image_url('body_bg.gif')
   height: 236px
 
 #header
-  background: image_url('jeans_pattern.png') repeat #212C35
+  background-image: image_url('jeans_pattern.png'), image_url('header_bg.png')
+  background-color: #212C35
+  background-repeat: repeat-x, repeat
 
 #top_bar 
   width: 960px
@@ -210,38 +203,131 @@ header h1 a
         &:hover
           background: #000000
 
+#title_menu
+  text-align: center
+  text-transform: uppercase
+  height: 100px
+
+  & h1
+    font-family: 'Futura'
+    font-size: 3.6em
+    color: #FFF
+    text-shadow: 2px 2px #000
+
 // body_content start 
+#body_content
+  display: inline
+
+  #body
+    min-width: 200px
+    max-width: 900px
+    display: inline-block
+    float: left
+    margin-bottom: 20px
+
+    .inner
+      height: auto
+      width: auto
+
+      #blog_posts
+        width: 70%
+        float: left
+
+        .blog_post
+
+          & h1
+            color: #333
+
+            & a:hover
+              border-bottom: 2px solid #333
+              
+
+            & a:visited
+              color: #333
+
+          & p
+            color: #333
+				
+				
+          .details
+            margin-bottom: 10px
+
+
+      #show_blog_post
+        width: 70%
+
+        & h1
+          color: #333
+
+        & p
+          color: #333
+
+        .details
+          color: #000
+          margin-bottom: 10px
+
+          .posted_at
+
+          .blog_author
+
+        .clearfix 
+
+
+  #side_body
+    margin-top: 80px
+    display: inline-block
+    width: 200px
+    float: right
+    border: 3px solid #666
+
+    .inner
+      margin-left: 10px
+
+      #blog_posts
+        margin-left: 0
+        margin-bottom: 10px
+
+        & a
+          color: blue
+
+          &:hover
+            border-bottom: 1px solid blue
+
+          &:visited
+            color: blue
+
 #body_content_title
   font-family: Franklin Gothic Book, Verdana, sans serif
   text-transform: uppercase
+  text-indent: -9999px
   color: #000
-  font-size: 3em
+  font-size: .2em
   text-align: center
-  border-bottom: 4px solid #666
+  margin-top: 0
+  margin-bottom: 0
 
-#blog_posts
-  width: 70%
-  float: left
 
 #comments
   width: 70%
   float: left
 
+  & h2
+    color: #333
+
+#comment_name
+  margin-left: 1.65em
+
+#comment_email
+  margin-left: 1.8em
+
 .field
-  color: #666
-
-.details
-  color: #666
-
-#side_body
-  width: 70%
+  color: #333
 
 a
-  color: blue
   text-decoration: none
 
   & visited
-    color: blue
+    text-decoration: none
 
 // body_content end
 
