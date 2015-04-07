@@ -128,6 +128,7 @@ form.inline p
 // global start
 #page_container
   width: 100%
+  min-width: 700px
   margin: 0
 
 .span
@@ -141,67 +142,75 @@ form.inline p
 
 #hva-gjor-vi-page
   background: image_url('body_bg.gif')
-  height: 236px
 
 #header
   background-image: image_url('jeans_pattern.png'), image_url('header_bg.png')
   background-color: #212C35
   background-repeat: repeat-x, repeat
+  margin: 0 auto
+  width: 100%
+  text-align: center
 
 #top_bar 
-  width: 960px
-  margin: auto
+  max-width: 960px
+  min-width: 700px
+  
+  display: inline-block
+  
+  #menu_wrapper
+    height: 60px
+    width: 500px
+    float: right
+    padding: 0
+
+    & .nav ul, & div .nav
+      list-style: none
+      display: block
+      padding: 6px 5px 0 0
+      float: right
+      text-transform: uppercase
+      text-decoration: none
+      font-size: 11px
+      font-weight: bold
+
+      & li
+        display: block
+        float: left
+        margin: 0 0 0 0
+        text-decoration: none
+
+        & a
+          display: block
+          text-decoration: none
+          padding: 8px 17px 8px 17px
+          margin: 7px 5px 0 0
+          color: #FFF
+          -moz-border-radius: 5px
+          -webkit-border-radius: 5px
+          border-radius: 5px
+
+          &:hover
+            background: #000000
+
+          &:active
+            background: #000000
 
   .logo
+    display: inline-block
     width: 150px
     height: 47px
-    margin: 0px 50px 8px 0
+    margin-top: 10px
 
     #custom_logo
-      float: left
+      //float: left
 
       img
         max-width: 100%
         max-height: 100%  
-
-#show_blog_post
   
   #next_prev_article, a.prev, a.home, a.next
     text-decoration: none
     color: #333
-
-#menu_wrapper
-  height: 60px
-  padding: 0
-
-  & .nav ul, & div .nav
-    list-style: none
-    display: block
-    padding: 6px 5px 0 0
-    float: right
-    text-transform: uppercase
-    text-decoration: none
-    font-size: 11px
-    font-weight: bold
-
-    & li
-      display: block
-      float: left
-      margin: 0 0 0 0
-      text-decoration: none
-
-      & a
-        display: block
-        text-decoration: none
-        padding: 8px 17px 8px 17px
-        margin: 7px 5px 0 0
-        color: #FFF
-        -moz-border-radius: 5px
-        -webkit-border-radius: 5px
-        border-radius: 5px
-
-        &:hover
-          background: #000000
 
 #title_menu
   text-align: center
@@ -220,7 +229,7 @@ form.inline p
 
   #body
     min-width: 200px
-    max-width: 900px
+    max-width: 800px
     display: inline-block
     float: left
     margin-bottom: 20px
@@ -237,6 +246,9 @@ form.inline p
 
           & h1
             color: #333
+
+            & a
+              color: #333
 
             & a:hover
               border-bottom: 2px solid #333
@@ -265,13 +277,6 @@ form.inline p
           color: #000
           margin-bottom: 10px
 
-          .posted_at
-
-          .blog_author
-
-        .clearfix 
-
-
   #side_body
     margin-top: 80px
     display: inline-block
@@ -279,12 +284,29 @@ form.inline p
     float: right
     border: 3px solid #666
 
+    #rss_feed_subscribe
+      margin-left: 16px
+
     .inner
       margin-left: 10px
 
       #blog_posts
         margin-left: 0
         margin-bottom: 10px
+
+        & a
+          color: blue
+
+          &:hover
+            border-bottom: 1px solid blue
+
+          &:visited
+            color: blue
+
+      #blog_archive_widget ul
+        margin-left: 0
+        margin-bottom: 10px
+        list-style: none
 
         & a
           color: blue
@@ -344,7 +366,7 @@ a
   font-size: 11px
   padding: 0 0 0 0
   color: #CCC
-  height: 450px
+  height: 45px
   text-shadow: -1px 0 1px #000
 
 #footer a
