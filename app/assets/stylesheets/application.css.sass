@@ -19,6 +19,7 @@
 // typography start
 
 body
+  margin: 0
   padding: 0
   font-size: 75%
   color: #222
@@ -131,6 +132,10 @@ form.inline p
   min-width: 700px
   margin: 0
 
+  #page
+    width: 960px
+    margin: 0 auto
+
 .span
   float: left
   margin-right: 10px
@@ -152,9 +157,7 @@ form.inline p
   text-align: center
 
 #top_bar 
-  max-width: 960px
-  min-width: 700px
-  
+  width: 960px  
   display: inline-block
   
   #menu_wrapper
@@ -197,12 +200,13 @@ form.inline p
 
   .logo
     display: inline-block
+    float: left
     width: 150px
     height: 47px
     margin-top: 10px
 
     #custom_logo
-      //float: left
+      float: left
 
       img
         max-width: 100%
@@ -223,13 +227,14 @@ form.inline p
     color: #FFF
     text-shadow: 2px 2px #000
 
-// body_content start 
+// body_content start
+
 #body_content
   display: inline
+  margin: 0 auto
 
   #body
-    min-width: 200px
-    max-width: 800px
+    width: 700px
     display: inline-block
     float: left
     margin-bottom: 20px
@@ -272,6 +277,13 @@ form.inline p
 
         & p
           color: #333
+
+        #next_prev_article
+
+          & a
+
+            &:visited
+              color: blue
 
         .details
           color: #000
