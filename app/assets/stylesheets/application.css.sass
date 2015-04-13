@@ -244,33 +244,51 @@ form.inline p
       width: auto
 
       #blog_posts
-        width: 70%
         float: left
 
         .blog_post
 
           & h1
-            color: #333
+            font-family: 'Tahoma'
+            color: #129
+            text-shadow: 2px -2px #ddc
 
             & a
-              color: #333
+              color: #129
 
             & a:hover
-              border-bottom: 2px solid #333
+              border-bottom: 2px solid #129
               
 
             & a:visited
-              color: #333
+              color: #129
 
           & p
             color: #333
-				
+            font-family: 'Courier New'
+
           .details
             margin-bottom: 10px
+            font-family: 'Verdana'
+
+            .tagged
+              font-family: 'Verdana'
+
+              & a
+                color: #129
+
+                &:hover
+                  color: #129
+                  border-bottom: 1px solid #129
+
+                &:visited
+                  color: #129
+
+          .comment_count a
+            color: #129
 
 
       #show_blog_post
-        width: 70%
 
         & h1
           color: #333
@@ -278,16 +296,36 @@ form.inline p
         & p
           color: #333
 
-        #next_prev_article
+        #blog_post
 
-          & a
+          & h1
+            font-family: 'Tahoma'
+            color: #333
+            text-shadow: 2px 2px #ddd
 
-            &:visited
-              color: blue
+          & p
+            font-family: 'Courier New'
+            font-size: 15px
+
+        #next_prev_article a
+
+          color: #129
+
+          &a:hover
+            border-bottom: 2px solid #129
+
+          &a:visited
+            color: #129
 
         .details
           color: #000
-          margin-bottom: 10px
+          margin-bottom: 20px
+        
+          .posted_at
+            font-family: 'Verdana'
+
+          .blog_author
+            font-family: 'Verdana'
 
   #side_body
     margin-top: 80px
@@ -295,24 +333,45 @@ form.inline p
     width: 200px
     float: right
 
-    #rss_feed_subscribe
-      margin-left: 16px
-
     .inner
       margin-left: 10px
+
+      #rss_feed_subscribe
+        margin-left: 16px
+        color: #129
+
+        &:hover
+          color: #129
+
+        &:visited
+          color: #129
+
+      #tags
+        margin-left: 40px
+        
+        & a
+          color: #129
+
+          &:hover
+            color: #129
+            border-bottom: 1px solid #129
+
+          &:visited
+            color: #129
+
 
       #blog_posts
         margin-left: 0
         margin-bottom: 10px
 
         & a
-          color: blue
+          color: #129
 
           &:hover
-            border-bottom: 1px solid blue
+            border-bottom: 1px solid #129
 
           &:visited
-            color: blue
+            color: #129
 
       #blog_archive_widget ul
         margin-left: 0
@@ -320,13 +379,13 @@ form.inline p
         list-style: none
 
         & a
-          color: blue
+          color: #129
 
           &:hover
-            border-bottom: 1px solid blue
+            border-bottom: 1px solid #129
 
           &:visited
-            color: blue
+            color: #129
 
 #body_content_title
   font-family: Franklin Gothic Book, Verdana, sans serif
