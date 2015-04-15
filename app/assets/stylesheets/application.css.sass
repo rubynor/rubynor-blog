@@ -156,15 +156,19 @@ form.inline p
   width: 100%
   text-align: center
 
+#wappper_top_bar
+  width: 100%
+	
 #top_bar 
   width: 960px  
   display: inline-block
+  padding-top: 20px
   
   #menu_wrapper
     height: 60px
     width: 500px
     float: right
-    padding: 0
+    padding-left: 0
 
     & .nav ul, & div .nav
       list-style: none
@@ -216,16 +220,30 @@ form.inline p
     text-decoration: none
     color: #333
 
-#title_menu
-  text-align: center
-  text-transform: uppercase
-  height: 70px
+#title_menu_wrapper
+  width: 100%
+  margin: 0 auto
+  background-image: image_url('jeans_pattern.png'), image_url('header_bg.png')
+  background-color: #191828
+  background-repeat: repeat-x, repeat
+	
+  .tm_underwrapper
+    width: 960px
+    margin: 0 auto
 
-  & h1
-    font-family: 'Futura'
-    font-size: 3.6em
-    color: #FFF
-    text-shadow: 2px 2px #000
+    #title_menu
+      text-align: left
+      text-transform: uppercase
+      height: 70px
+      padding-top: 40px
+      padding-bottom: 20px
+
+      & h1
+        font-family: 'Futura'
+        font-size: 4em
+        color: #FFF
+        text-shadow: 2px 2px #000
+        margin-top: 0
 
 // body_content start
 
@@ -350,7 +368,6 @@ form.inline p
 
     .inner
       margin-left: 10px
-      font-family: 'PT Sans'
 
       #rss_feed_subscribe
         margin-left: 16px
